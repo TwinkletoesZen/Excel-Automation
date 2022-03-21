@@ -30,9 +30,11 @@ def Record_Basketball_Game():
   Between_Who = input("What House is it Between?: ")
   Winner = input("Winner: ").upper()
   Loser = input("Loser: ")
-  Points_Winner = input("Points for Winner: ")
-  Points_Loser = input("Points for Loser: ")
+  Points_Winner = int(input("Points for Winner: "))
+  Points_Loser = int(input("Points for Loser: "))
   ask_Date = input("Is the game happening today?: ").upper()
+  extra_note = input("Extra Note: ")
+
 
   # if Winner == Unity:
   #   with open("House_Points/UnityP.txt", a):
@@ -54,16 +56,16 @@ def Record_Basketball_Game():
     Date = input("Enter the Date (yyyy/mm/dd)")
 
     
-  ws_basketball.append([Between_Who, Winner, Loser, Points_Winner, Points_Loser, Date])    
+  ws_basketball.append([Between_Who, Winner, Loser, Points_Winner, Points_Loser, Date, extra_note])    
 
 def Record_Volleyball_Game():
   Between_Who = input("What House is it Between?: ")
   Winner = input("Winner: ")
   Loser = input("Loser: ")
-  Points_Winner = input("Points for Winner: ")
-  Points_Loser = input("Points for Loser: ")
+  Points_Winner = int(input("Points for Winner: "))
+  Points_Loser = int(input("Points for Loser: "))
   ask_Date = input("Is the game happening today?: ").upper()
-
+  extra_note = input("Extra Note: ")
   
   if ask_Date == "Y":
     Date = date.today()
@@ -71,15 +73,16 @@ def Record_Volleyball_Game():
     Date = input("Enter the Date (yyyy/mm/dd)")
 
     
-  ws_volleyball.append([Between_Who, Winner, Loser, Points_Winner, Points_Loser, Date])   
+  ws_volleyball.append([Between_Who, Winner, Loser, Points_Winner, Points_Loser, Date, extra_note])   
  
 def Record_Soccer_Game():
   Between_Who = input("What House is it Between?: ")
   Winner = input("Winner: ")
   Loser = input("Loser: ")
-  Points_Winner = input("Points for Winner: ")
-  Points_Loser = input("Points for Loser: ")
+  Points_Winner = int(input("Points for Winner: "))
+  Points_Loser = int(input("Points for Loser: "))
   ask_Date = input("Is the game happening today?: ").upper()
+  extra_note = input("Extra Note: ")
 
   
   if ask_Date == "Y":
@@ -88,16 +91,16 @@ def Record_Soccer_Game():
     Date = input("Enter the Date (yyyy/mm/dd)")
 
     
-  ws_soccer.append([Between_Who, Winner, Loser, Points_Winner, Points_Loser, Date])    
+  ws_soccer.append([Between_Who, Winner, Loser, Points_Winner, Points_Loser, Date, extra_note])    
 
 def Record_PingPong_Game():
   Between_Who = input("What House is it Between?: ")
   Winner = input("Winner: ")
   Loser = input("Loser: ")
-  Points_Winner = input("Points for Winner: ")
-  Points_Loser = input("Points for Loser: ")
+  Points_Winner = int(input("Points for Winner: "))
+  Points_Loser = int(input("Points for Loser: "))
   ask_Date = input("Is the game happening today?: ").upper()
-
+  extra_note = input("Extra Note: ")
   
   if ask_Date == "Y":
     Date = date.today()
@@ -105,15 +108,16 @@ def Record_PingPong_Game():
     Date = input("Enter the Date (yyyy/mm/dd)")
 
     
-  ws_ping_pong.append([Between_Who, Winner, Loser, Points_Winner, Points_Loser, Date])    
+  ws_ping_pong.append([Between_Who, Winner, Loser, Points_Winner, Points_Loser, Date, extra_note])    
 
 def Record_Badminton_Game():
   Between_Who = input("What House is it Between?: ")
   Winner = input("Winner: ")
   Loser = input("Loser: ")
-  Points_Winner = input("Points for Winner: ")
-  Points_Loser = input("Points for Loser: ")
+  Points_Winner = int(input("Points for Winner: "))
+  Points_Loser = int(input("Points for Loser: "))
   ask_Date = input("Is the game happening today?: ").upper()
+  extra_note = input("Extra Note: ")
 
   
   if ask_Date == "Y":
@@ -122,16 +126,16 @@ def Record_Badminton_Game():
     Date = input("Enter the Date (yyyy/mm/dd)")
 
     
-  ws_badminton.append([Between_Who, Winner, Loser, Points_Winner, Points_Loser, Date])    
+  ws_badminton.append([Between_Who, Winner, Loser, Points_Winner, Points_Loser, Date, extra_note])    
 
 def Record_Pool_Game():
   Between_Who = input("What House is it Between?: ")
   Winner = input("Winner: ")
   Loser = input("Loser: ")
-  Points_Winner = input("Points for Winner: ")
-  Points_Loser = input("Points for Loser: ")
+  Points_Winner = int(input("Points for Winner: "))
+  Points_Loser = int(input("Points for Loser: "))
   ask_Date = input("Is the game happening today?: ").upper()
-
+  extra_note = input("Extra Note: ")
   
   if ask_Date == "Y":
     Date = date.today()
@@ -139,7 +143,7 @@ def Record_Pool_Game():
     Date = input("Enter the Date (yyyy/mm/dd)")
 
     
-  ws_pool.append([Between_Who, Winner, Loser, Points_Winner, Points_Loser, Date])    
+  ws_pool.append([Between_Who, Winner, Loser, Points_Winner, Points_Loser, Date, extra_note])    
 
 
 
